@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografar e Descriptografar</title>
+    <title>Decodificador</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Criptografar e Descriptografar</h1>
+        <h1>Decodificador de Texto</h1>
         <div class="input-group">
+            <textarea class="form-control transparent" id="textoOriginal" rows="5" placeholder="Digite seu texto"></textarea>
+            <div id="mensagemErro" class="mensagem-erro"></div>
+
             <div class="aviso">
-                <img id="imagemAviso" src="1.png" alt="Imagem de aviso">
-                <p id="textoAviso" class="text-muted">Digite um texto para criptografar.</p>
-            </div>
-            <textarea class="form-control" id="textoOriginal" rows="5" placeholder="Digite seu texto"></textarea>
+                <img id="imagemAviso" src="1.png" alt="Imagem de aviso" width="400" height="944">
+                            </div>
         </div>
         <div class="button-group">
             <button class="btn btn-primary" onclick="criptografar()">Criptografar</button>
             <button class="btn btn-secondary" onclick="descriptografar()">Descriptografar</button>
         </div>
         <div class="form-group">
-            <textarea class="form-control" id="textoCriptografado" rows="5" readonly></textarea>
+            <textarea class="form-control transparent" id="textoCriptografado" rows="5" readonly></textarea>
         </div>
         <button class="btn btn-secondary mb-3" onclick="copiarTexto()">Copiar</button>
+        <footer>
+            <p>Desenvolvido por Laércio Ricardo - JUNHO - 2024</p>
+        </footer>
+
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+ -
